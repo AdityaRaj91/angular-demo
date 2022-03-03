@@ -14,7 +14,10 @@ export class AppComponent {
 
   ngOnInit() {
     this.http
-      .get('https://jsonplaceholder.typicode.com/users')
+      //.get('https://jsonplaceholder.typicode.com/users')
+      .get(
+        'https://alpha-functionalapp.azurewebsites.net/api/httptriggergetmetadata'
+      )
       .subscribe((users) => {
         this.heroes = users;
         this.heroes = [...this.heroes];
