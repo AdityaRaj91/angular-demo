@@ -18,7 +18,7 @@ export class AppComponent {
       .subscribe((users) => {
         this.heroes = users;
         this.heroes = [...this.heroes];
-        console.log(users);
+        console.log(JSON.stringify(users));
       });
   }
 }
