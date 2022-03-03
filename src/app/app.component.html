@@ -17,15 +17,15 @@
       <thead>
         <tr>
           <th>Id</th>
-          <th>Hero Name</th>
-          <th>Country</th>
+          <th>Name</th>
+          <th>Phone</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let hero of heroes | filter: searchText">
           <td>{{ hero.id }}</td>
           <td>{{ hero.name }}</td>
-          <td>{{ hero.country }}</td>
+          <td>{{ hero.phone }}</td>
         </tr>
       </tbody>
     </table>
